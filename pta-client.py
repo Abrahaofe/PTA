@@ -111,7 +111,7 @@ def test3(sckt):
     firstFile = files[0].split(" ",3)
     files[0] = firstFile[3]
     mess = data1.split(" ")
-  else:O modo "w" cria um novo arquivo de texto, o
+  else:
     return (-2,"")
   
   if len(mess) < 4:
