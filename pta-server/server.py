@@ -14,14 +14,14 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 HOST = '127.0.0.1' # ip de da interface de loopback
 PORT = 11550 # Essa porta foi informada no pdf do professor
-FILES_PATH = "./pta-server/files" # variavel para o caminho dos arquivos
+FILES_PATH = "./files" # variavel para o caminho dos arquivos
 
 server.bind((HOST, PORT))
 server.listen()
 print(f"Server escutando na porta: {PORT} com o IP: {HOST}")
 
 # Lendo a lista de usuarios
-with open("./pta-server/users.txt", "r") as file:
+with open("./users.txt", "r") as file:
     users = file.read().split()
  
 # Formato da mensagem de pedido = |SEQ_NUM|COMMAND|ARGS|
